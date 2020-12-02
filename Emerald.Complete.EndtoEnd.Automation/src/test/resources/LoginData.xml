@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+<parameter name="browser" value="chrome"/>
+<parameter name="URL" value="https://emeralddev.cubefunder.com/"/>
+<parameter name="ValidUsername" value="zulfiqar"/>
+<parameter name="ValidPassword" value="Us@12e34"/>
+ 
+</suite> <!-- Suite -->

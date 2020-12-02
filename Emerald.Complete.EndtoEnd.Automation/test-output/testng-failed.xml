@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="LoginText" value="Log In"/>
+  <parameter name="InvalidUsername" value="Abcd123456"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ValidPassword" value="Us@12e34"/>
+  <parameter name="LoginExpectedtitle" value="Emerald | Login"/>
+  <parameter name="Usernametooltip" value="User name field is required"/>
+  <parameter name="Passwordtooltip" value="Password field is required"/>
+  <parameter name="URL" value="https://emeralddev.cubefunder.com/"/>
+  <parameter name="InvalidPassword" value="123456Abcdef"/>
+  <parameter name="ValidUsername" value="zulfiqar"/>
+  <listeners>
+    <listener class-name="com.em.common.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="New.test.Project(failed)">
+    <classes>
+      <class name="com.em.testcases.LoginPage_TestCases">
+        <methods>
+          <include name="Test_for_Invalid_login" invocation-numbers="0"/>
+          <include name="startBrowser"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.em.testcases.LoginPage_TestCases -->
+    </classes>
+  </test> <!-- New.test.Project(failed) -->
+</suite> <!-- Failed suite [Suite] -->
