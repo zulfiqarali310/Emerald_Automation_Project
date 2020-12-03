@@ -1,26 +1,15 @@
 package com.em.testcases;
 
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import com.em.common.BrowsersFactory;
-import com.em.common.ExtentReporterNG;
 import com.em.common.HelperMethods;
 import com.em.locators.LoginPage_Locators;
 
 public class LoginPage_TestCases extends BrowsersFactory {
 	LoginPage_Locators loginpage;
 	HelperMethods HelpMethod = new HelperMethods();
-
-	ExtentTest test;
-	private static ExtentReports extent = ExtentReporterNG.getReportObject();
-	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	@Test(priority = 1)
 	@Parameters({ "URL", "LoginExpectedtitle" })
