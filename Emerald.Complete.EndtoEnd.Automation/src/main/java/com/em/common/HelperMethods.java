@@ -52,7 +52,7 @@ public class HelperMethods extends BrowsersFactory {
 
 		Wait<WebDriver> wait = new WebDriverWait(driver, 120);
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(10000);
 			wait.until(expectation);
 		} catch (Throwable error) {
 			Reporter.log("Timeout waiting for Page Load Request to complete.");

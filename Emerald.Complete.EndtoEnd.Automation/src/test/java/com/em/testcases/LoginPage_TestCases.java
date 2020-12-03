@@ -1,5 +1,6 @@
 package com.em.testcases;
 
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
@@ -41,7 +42,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 		loginpage = new LoginPage_Locators(driver);
 		String LogoActualtext = loginpage.getloginLogoText();
 		Assert.assertTrue(LogoActualtext.contains("Login"));
-		//TestListeners.
+		// TestListeners.
 	}
 
 	@Test(priority = 3)
@@ -117,7 +118,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 		Assert.assertEquals(Pwdtooltip, Passwordtooltip);
 		loginpage.clearUserName();
 	}
-	
+
 	@Test(priority = 10)
 	@Parameters({ "InvalidUsername", "InvalidPassword" })
 	public void Test_for_Invalid_login(String InvalidUsername, String InvalidPassword) {
@@ -129,8 +130,6 @@ public class LoginPage_TestCases extends BrowsersFactory {
 		loginpage.clickOnloginButton();
 		String ToasterErrorMessage = loginpage.getToasterErrormessage();
 		System.out.println(ToasterErrorMessage);
-		extentTest.get().fail(ToasterErrorMessage);
-		
 
 	}
 

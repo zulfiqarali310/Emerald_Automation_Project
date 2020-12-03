@@ -3,6 +3,7 @@ package com.em.common;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -27,8 +28,10 @@ public class BrowsersFactory {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.silentOutput", "true");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("use-fake-ui-for-media-stream");
 			System.setProperty("webdriver.chrome.driver", Chromebrowserpath);
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", firefoxbrowserpath);
 			driver = new FirefoxDriver();
