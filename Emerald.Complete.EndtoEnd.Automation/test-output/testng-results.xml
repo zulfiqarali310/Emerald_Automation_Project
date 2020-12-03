@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="20" passed="14" failed="0" skipped="0">
+<testng-results ignored="6" total="21" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-03T15:22:33 PKT" name="Suite" finished-at="2020-12-03T15:24:15 PKT" duration-ms="102672">
+  <suite started-at="2020-12-03T17:54:56 PKT" name="Suite" finished-at="2020-12-03T17:56:47 PKT" duration-ms="111030">
     <groups>
     </groups>
-    <test started-at="2020-12-03T15:22:33 PKT" name="Emerald Complete Testing Flow" finished-at="2020-12-03T15:22:33 PKT" duration-ms="8">
+    <test started-at="2020-12-03T17:54:56 PKT" name="Emerald Complete Testing Flow" finished-at="2020-12-03T17:54:56 PKT" duration-ms="10">
     </test> <!-- Emerald Complete Testing Flow -->
-    <test started-at="2020-12-03T15:22:33 PKT" name="New.test.Project" finished-at="2020-12-03T15:24:15 PKT" duration-ms="102642">
+    <test started-at="2020-12-03T17:54:56 PKT" name="New.test.Project" finished-at="2020-12-03T17:56:47 PKT" duration-ms="110987">
       <class name="com.em.testcases.CallLog_Windows_TestCases">
-        <test-method signature="Switch_toCall_LogWindwo()[pri:12, instance:com.em.testcases.CallLog_Windows_TestCases@f79e]" started-at="2020-12-03T15:23:51 PKT" name="Switch_toCall_LogWindwo" finished-at="2020-12-03T15:24:03 PKT" duration-ms="12182" status="PASS">
+        <test-method signature="Switch_toCall_LogWindwo()[pri:12, instance:com.em.testcases.CallLog_Windows_TestCases@7ee8290b]" started-at="2020-12-03T17:56:23 PKT" name="Switch_toCall_LogWindwo" finished-at="2020-12-03T17:56:36 PKT" duration-ms="12138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Switch_toCall_LogWindwo -->
       </class> <!-- com.em.testcases.CallLog_Windows_TestCases -->
       <class name="com.em.common.BrowsersFactory">
-        <test-method is-config="true" signature="startBrowser(java.lang.String)[pri:0, instance:com.em.common.BrowsersFactory@8c3b9d]" started-at="2020-12-03T15:22:33 PKT" name="startBrowser" finished-at="2020-12-03T15:22:38 PKT" duration-ms="5693" status="PASS">
+        <test-method is-config="true" signature="startBrowser(java.lang.String)[pri:0, instance:com.em.common.BrowsersFactory@4c39bec8]" started-at="2020-12-03T17:54:56 PKT" name="startBrowser" finished-at="2020-12-03T17:55:02 PKT" duration-ms="6036" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,13 +26,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.em.common.BrowsersFactory@8c3b9d]" started-at="2020-12-03T15:24:15 PKT" name="afterMethod" finished-at="2020-12-03T15:24:15 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.em.common.BrowsersFactory@4c39bec8]" started-at="2020-12-03T17:56:47 PKT" name="afterMethod" finished-at="2020-12-03T17:56:47 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.em.common.BrowsersFactory -->
       <class name="com.em.testcases.CreateApplication_TestCases">
-        <test-method signature="TestCreate_ApplicationPage_are_Displayed(java.lang.String, java.lang.String)[pri:13, instance:com.em.testcases.CreateApplication_TestCases@7ee8290b]" started-at="2020-12-03T15:24:03 PKT" name="TestCreate_ApplicationPage_are_Displayed" finished-at="2020-12-03T15:24:14 PKT" duration-ms="10464" status="PASS">
+        <test-method signature="TestCreate_ApplicationPage_are_Displayed(java.lang.String, java.lang.String)[pri:13, instance:com.em.testcases.CreateApplication_TestCases@1f59a598]" started-at="2020-12-03T17:56:36 PKT" name="TestCreate_ApplicationPage_are_Displayed" finished-at="2020-12-03T17:56:46 PKT" duration-ms="10490" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,13 +48,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCreate_ApplicationPage_are_Displayed -->
-        <test-method signature="ClickOn_Save_or_CreateApplication_Button()[pri:14, instance:com.em.testcases.CreateApplication_TestCases@7ee8290b]" started-at="2020-12-03T15:24:14 PKT" name="ClickOn_Save_or_CreateApplication_Button" finished-at="2020-12-03T15:24:15 PKT" duration-ms="1411" status="PASS">
+        <test-method signature="ClickOn_Save_or_CreateApplication_Button(java.lang.String)[pri:14, instance:com.em.testcases.CreateApplication_TestCases@1f59a598]" started-at="2020-12-03T17:56:46 PKT" name="ClickOn_Save_or_CreateApplication_Button" finished-at="2020-12-03T17:56:47 PKT" duration-ms="1219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is required   Source is required   Main Guarantor   Title is required   Forename is required   Surname is required   Date of Birth is required   Mobile is required   Email is required   Company   Company name is required   Registration number is required   Business type is required   Incorporation Date is required   Registered Address   At least one is required Property,Building Name or Sub Building Name   Post code is required]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOn_Save_or_CreateApplication_Button -->
+        <test-method signature="CheckCompany_sectionText_areAvailble(java.lang.String)[pri:15, instance:com.em.testcases.CreateApplication_TestCases@1f59a598]" started-at="2020-12-03T17:56:47 PKT" name="CheckCompany_sectionText_areAvailble" finished-at="2020-12-03T17:56:47 PKT" duration-ms="69" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Company]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckCompany_sectionText_areAvailble -->
       </class> <!-- com.em.testcases.CreateApplication_TestCases -->
       <class name="com.em.testcases.LoginPage_TestCases">
-        <test-method signature="Emerald_Lunched(java.lang.String, java.lang.String)[pri:1, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:38 PKT" name="Emerald_Lunched" finished-at="2020-12-03T15:22:52 PKT" duration-ms="13889" status="PASS">
+        <test-method signature="Emerald_Lunched(java.lang.String, java.lang.String)[pri:1, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:02 PKT" name="Emerald_Lunched" finished-at="2020-12-03T17:55:16 PKT" duration-ms="13692" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,19 +88,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Emerald_Lunched -->
-        <test-method signature="Test_Login_Logo_Text_isPresent()[pri:2, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:52 PKT" name="Test_Login_Logo_Text_isPresent" finished-at="2020-12-03T15:22:52 PKT" duration-ms="89" status="PASS">
+        <test-method signature="Test_Login_Logo_Text_isPresent()[pri:2, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:16 PKT" name="Test_Login_Logo_Text_isPresent" finished-at="2020-12-03T17:55:16 PKT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Login_Logo_Text_isPresent -->
-        <test-method signature="Test_Username_Text_isPresent()[pri:3, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:52 PKT" name="Test_Username_Text_isPresent" finished-at="2020-12-03T15:22:52 PKT" duration-ms="65" status="PASS">
+        <test-method signature="Test_Username_Text_isPresent()[pri:3, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:16 PKT" name="Test_Username_Text_isPresent" finished-at="2020-12-03T17:55:16 PKT" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Username_Text_isPresent -->
-        <test-method signature="Test_Password_Text_isPresent()[pri:4, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:52 PKT" name="Test_Password_Text_isPresent" finished-at="2020-12-03T15:22:52 PKT" duration-ms="63" status="PASS">
+        <test-method signature="Test_Password_Text_isPresent()[pri:4, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:16 PKT" name="Test_Password_Text_isPresent" finished-at="2020-12-03T17:55:16 PKT" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Password_Text_isPresent -->
-        <test-method signature="Click_LoginButton_without_usernamePaswword(java.lang.String, java.lang.String)[pri:5, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:52 PKT" name="Click_LoginButton_without_usernamePaswword" finished-at="2020-12-03T15:22:59 PKT" duration-ms="6839" status="PASS">
+        <test-method signature="Click_LoginButton_without_usernamePaswword(java.lang.String, java.lang.String)[pri:5, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:16 PKT" name="Click_LoginButton_without_usernamePaswword" finished-at="2020-12-03T17:55:28 PKT" duration-ms="11448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +116,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_LoginButton_without_usernamePaswword -->
-        <test-method signature="Test_LoginButton(java.lang.String)[pri:6, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:59 PKT" name="Test_LoginButton" finished-at="2020-12-03T15:22:59 PKT" duration-ms="57" status="PASS">
+        <test-method signature="Test_LoginButton(java.lang.String)[pri:6, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:28 PKT" name="Test_LoginButton" finished-at="2020-12-03T17:55:28 PKT" duration-ms="55" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_LoginButton -->
-        <test-method signature="Test_Show_Hide_PasswordButton(java.lang.String)[pri:7, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:22:59 PKT" name="Test_Show_Hide_PasswordButton" finished-at="2020-12-03T15:23:00 PKT" duration-ms="450" status="PASS">
+        <test-method signature="Test_Show_Hide_PasswordButton(java.lang.String)[pri:7, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:28 PKT" name="Test_Show_Hide_PasswordButton" finished-at="2020-12-03T17:55:28 PKT" duration-ms="425" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Show_Hide_PasswordButton -->
-        <test-method signature="Test_login_without_Username(java.lang.String, java.lang.String)[pri:8, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:23:00 PKT" name="Test_login_without_Username" finished-at="2020-12-03T15:23:14 PKT" duration-ms="14065" status="PASS">
+        <test-method signature="Test_login_without_Username(java.lang.String, java.lang.String)[pri:8, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:28 PKT" name="Test_login_without_Username" finished-at="2020-12-03T17:55:44 PKT" duration-ms="16189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_login_without_Username -->
-        <test-method signature="Test_login_without_Password(java.lang.String, java.lang.String)[pri:9, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:23:14 PKT" name="Test_login_without_Password" finished-at="2020-12-03T15:23:28 PKT" duration-ms="14159" status="PASS">
+        <test-method signature="Test_login_without_Password(java.lang.String, java.lang.String)[pri:9, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:55:44 PKT" name="Test_login_without_Password" finished-at="2020-12-03T17:56:01 PKT" duration-ms="16113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,7 +170,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_login_without_Password -->
-        <test-method signature="Test_for_Invalid_login(java.lang.String, java.lang.String)[pri:10, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:23:28 PKT" name="Test_for_Invalid_login" finished-at="2020-12-03T15:23:40 PKT" duration-ms="12330" status="PASS">
+        <test-method signature="Test_for_Invalid_login(java.lang.String, java.lang.String)[pri:10, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:56:01 PKT" name="Test_for_Invalid_login" finished-at="2020-12-03T17:56:13 PKT" duration-ms="12153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,7 +186,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_for_Invalid_login -->
-        <test-method signature="valid_login(java.lang.String, java.lang.String)[pri:11, instance:com.em.testcases.LoginPage_TestCases@4c39bec8]" started-at="2020-12-03T15:23:40 PKT" name="valid_login" finished-at="2020-12-03T15:23:51 PKT" duration-ms="10794" status="PASS">
+        <test-method signature="valid_login(java.lang.String, java.lang.String)[pri:11, instance:com.em.testcases.LoginPage_TestCases@f79e]" started-at="2020-12-03T17:56:13 PKT" name="valid_login" finished-at="2020-12-03T17:56:23 PKT" duration-ms="10695" status="PASS">
           <params>
             <param index="0">
               <value>

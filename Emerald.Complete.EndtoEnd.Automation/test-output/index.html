@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">15 methods,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.em.testcases.CreateApplication_TestCases" class="method navigator-link" hash-for-method="ClickOn_Save_or_CreateApplication_Button">ClickOn_Save_or_CreateApplication_Button</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.em.testcases.CreateApplication_TestCases" class="method navigator-link" hash-for-method="CheckCompany_sectionText_areAvailble(Company)">CheckCompany_sectionText_areAvailble(Company)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.em.testcases.CreateApplication_TestCases" class="method navigator-link" hash-for-method="ClickOn_Save_or_CreateApplication_Button(Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is ...)">ClickOn_Save_or_CreateApplication_Button(Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -285,9 +290,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ClickOn_Save_or_CreateApplication_Button">
-                  </a> <!-- ClickOn_Save_or_CreateApplication_Button -->
+                  <a name="CheckCompany_sectionText_areAvailble(Company)">
+                  </a> <!-- CheckCompany_sectionText_areAvailble(Company) -->
+                  <span class="method-name">CheckCompany_sectionText_areAvailble</span>
+                  <span class="parameters">(Company)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOn_Save_or_CreateApplication_Button(Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is ...)">
+                  </a> <!-- ClickOn_Save_or_CreateApplication_Button(Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is ...) -->
                   <span class="method-name">ClickOn_Save_or_CreateApplication_Button</span>
+                  <span class="parameters">(Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is required   Source is required   Main Guarantor   Title is required   Forename is required   Surname is required   Date of Birth is required   Mobile is required   Email is required   Company   Company name is required   Registration number is required   Business type is required   Incorporation Date is required   Registered Address   At least one is required Property,Building Name or Sub Building Name   Post code is required)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -327,14 +341,16 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;InvalidUsername&quot; value=&quot;Abcd123456&quot;/&gt;
   &lt;parameter name=&quot;LoginText&quot; value=&quot;Log In&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;parameter name=&quot;ValidPassword&quot; value=&quot;Us@12e34&quot;/&gt;
-  &lt;parameter name=&quot;CreateApplication_URL&quot; value=&quot;https://emeralddev.cubefunder.com/applications&quot;/&gt;
+  &lt;parameter name=&quot;Requiredfields_errorMessagess&quot; value=&quot;Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is required   Source is required   Main Guarantor   Title is required   Forename is required   Surname is required   Date of Birth is required   Mobile is required   Email is required   Company   Company name is required   Registration number is required   Business type is required   Incorporation Date is required   Registered Address   At least one is required Property,Building Name or Sub Building Name   Post code is required&quot;/&gt;
   &lt;parameter name=&quot;LoginExpectedtitle&quot; value=&quot;Emerald | Login&quot;/&gt;
   &lt;parameter name=&quot;Usernametooltip&quot; value=&quot;User name field is required&quot;/&gt;
   &lt;parameter name=&quot;Passwordtooltip&quot; value=&quot;Password field is required&quot;/&gt;
   &lt;parameter name=&quot;URL&quot; value=&quot;https://emeralddev.cubefunder.com/&quot;/&gt;
   &lt;parameter name=&quot;CreateApplication_Expectedtitle&quot; value=&quot;Emerald | Application&quot;/&gt;
+  &lt;parameter name=&quot;CommText&quot; value=&quot;Company&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;ValidPassword&quot; value=&quot;Us@12e34&quot;/&gt;
+  &lt;parameter name=&quot;CreateApplication_URL&quot; value=&quot;https://emeralddev.cubefunder.com/applications&quot;/&gt;
   &lt;parameter name=&quot;InvalidPassword&quot; value=&quot;123456Abcdef&quot;/&gt;
   &lt;parameter name=&quot;ValidUsername&quot; value=&quot;zulfiqar&quot;/&gt;
   &lt;listeners&gt;
@@ -390,63 +406,67 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test_login_without_Password')
+data.setCell(0, 1, 'Test_login_without_Username')
 data.setCell(0, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(0, 3, 14159);
+data.setCell(0, 3, 16189);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test_login_without_Username')
+data.setCell(1, 1, 'Test_login_without_Password')
 data.setCell(1, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(1, 3, 14065);
+data.setCell(1, 3, 16113);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Emerald_Lunched')
 data.setCell(2, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(2, 3, 13889);
+data.setCell(2, 3, 13692);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Test_for_Invalid_login')
 data.setCell(3, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(3, 3, 12330);
+data.setCell(3, 3, 12153);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Switch_toCall_LogWindwo')
 data.setCell(4, 2, 'com.em.testcases.CallLog_Windows_TestCases')
-data.setCell(4, 3, 12182);
+data.setCell(4, 3, 12138);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'valid_login')
+data.setCell(5, 1, 'Click_LoginButton_without_usernamePaswword')
 data.setCell(5, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(5, 3, 10794);
+data.setCell(5, 3, 11448);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TestCreate_ApplicationPage_are_Displayed')
-data.setCell(6, 2, 'com.em.testcases.CreateApplication_TestCases')
-data.setCell(6, 3, 10464);
+data.setCell(6, 1, 'valid_login')
+data.setCell(6, 2, 'com.em.testcases.LoginPage_TestCases')
+data.setCell(6, 3, 10695);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Click_LoginButton_without_usernamePaswword')
-data.setCell(7, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(7, 3, 6839);
+data.setCell(7, 1, 'TestCreate_ApplicationPage_are_Displayed')
+data.setCell(7, 2, 'com.em.testcases.CreateApplication_TestCases')
+data.setCell(7, 3, 10490);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'ClickOn_Save_or_CreateApplication_Button')
 data.setCell(8, 2, 'com.em.testcases.CreateApplication_TestCases')
-data.setCell(8, 3, 1411);
+data.setCell(8, 3, 1219);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'Test_Show_Hide_PasswordButton')
 data.setCell(9, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(9, 3, 450);
+data.setCell(9, 3, 425);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'Test_Login_Logo_Text_isPresent')
 data.setCell(10, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(10, 3, 89);
+data.setCell(10, 3, 95);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Test_Username_Text_isPresent')
-data.setCell(11, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(11, 3, 65);
+data.setCell(11, 1, 'CheckCompany_sectionText_areAvailble')
+data.setCell(11, 2, 'com.em.testcases.CreateApplication_TestCases')
+data.setCell(11, 3, 69);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Test_Password_Text_isPresent')
+data.setCell(12, 1, 'Test_Username_Text_isPresent')
 data.setCell(12, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(12, 3, 63);
+data.setCell(12, 3, 58);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'Test_LoginButton')
 data.setCell(13, 2, 'com.em.testcases.LoginPage_TestCases')
-data.setCell(13, 3, 57);
+data.setCell(13, 3, 55);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Test_Password_Text_isPresent')
+data.setCell(14, 2, 'com.em.testcases.LoginPage_TestCases')
+data.setCell(14, 3, 50);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -514,72 +534,76 @@ return data;
               <div class="chronological-class-name">com.em.testcases.LoginPage_TestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Emerald_Lunched(https://emeralddev.cubefunder.com/, Emerald | Login)</span>
-                <span class="method-start">5737 ms</span>
+                <span class="method-start">6047 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_Login_Logo_Text_isPresent</span>
-                <span class="method-start">19639 ms</span>
+                <span class="method-start">19755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_Username_Text_isPresent</span>
-                <span class="method-start">19730 ms</span>
+                <span class="method-start">19852 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_Password_Text_isPresent</span>
-                <span class="method-start">19797 ms</span>
+                <span class="method-start">19912 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Click_LoginButton_without_usernamePaswword(User name field is required, Password field is required)</span>
-                <span class="method-start">19862 ms</span>
+                <span class="method-start">19964 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_LoginButton(Log In)</span>
-                <span class="method-start">26703 ms</span>
+                <span class="method-start">31414 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_Show_Hide_PasswordButton(Us@12e34)</span>
-                <span class="method-start">26762 ms</span>
+                <span class="method-start">31471 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_login_without_Username(Us@12e34, User name field is required)</span>
-                <span class="method-start">27214 ms</span>
+                <span class="method-start">31898 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_login_without_Password(zulfiqar, Password field is required)</span>
-                <span class="method-start">41280 ms</span>
+                <span class="method-start">48090 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_for_Invalid_login(Abcd123456, 123456Abcdef)</span>
-                <span class="method-start">55441 ms</span>
+                <span class="method-start">64205 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">valid_login(zulfiqar, Us@12e34)</span>
-                <span class="method-start">67772 ms</span>
+                <span class="method-start">76359 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.em.testcases.CallLog_Windows_TestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Switch_toCall_LogWindwo</span>
-                <span class="method-start">78569 ms</span>
+                <span class="method-start">87056 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.em.testcases.CreateApplication_TestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestCreate_ApplicationPage_are_Displayed(https://emeralddev.cubefunder.com/applications, Emerald | Application)</span>
-                <span class="method-start">90757 ms</span>
+                <span class="method-start">99197 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">ClickOn_Save_or_CreateApplication_Button</span>
-                <span class="method-start">101225 ms</span>
+                <span class="method-name">ClickOn_Save_or_CreateApplication_Button(Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is ...)</span>
+                <span class="method-start">109691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckCompany_sectionText_areAvailble(Company)</span>
+                <span class="method-start">110911 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.em.common.BrowsersFactory</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">102637 ms</span>
+                <span class="method-start">110982 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

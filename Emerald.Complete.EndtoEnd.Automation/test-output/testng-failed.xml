@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="LoginText" value="Log In"/>
   <parameter name="InvalidUsername" value="Abcd123456"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="ValidPassword" value="Us@12e34"/>
+  <parameter name="LoginText" value="Log In"/>
+  <parameter name="Requiredfields_errorMessagess" value="Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is required   Source is required   Main Guarantor   Title is required   Forename is required   Surname is required   Date of Birth is required   Mobile is required   Email is required   Company   Company name is required   Registration number is required   Business type is required   Incorporation Date is required   Registered Address   At least one is required Property,Building Name or Sub Building Name   Post code is required"/>
   <parameter name="LoginExpectedtitle" value="Emerald | Login"/>
   <parameter name="Usernametooltip" value="User name field is required"/>
   <parameter name="Passwordtooltip" value="Password field is required"/>
   <parameter name="URL" value="https://emeralddev.cubefunder.com/"/>
+  <parameter name="CreateApplication_Expectedtitle" value="Emerald | Application"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ValidPassword" value="Us@12e34"/>
+  <parameter name="CreateApplication_URL" value="https://emeralddev.cubefunder.com/applications"/>
   <parameter name="InvalidPassword" value="123456Abcdef"/>
   <parameter name="ValidUsername" value="zulfiqar"/>
   <listeners>
@@ -16,13 +19,13 @@
   </listeners>
   <test thread-count="5" name="New.test.Project(failed)">
     <classes>
-      <class name="com.em.testcases.LoginPage_TestCases">
+      <class name="com.em.testcases.CreateApplication_TestCases">
         <methods>
           <include name="startBrowser"/>
           <include name="afterMethod"/>
-          <include name="Test_to_Allow_alerts_permission"/>
+          <include name="ClickOn_Save_or_CreateApplication_Button" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.em.testcases.LoginPage_TestCases -->
+      </class> <!-- com.em.testcases.CreateApplication_TestCases -->
     </classes>
   </test> <!-- New.test.Project(failed) -->
 </suite> <!-- Failed suite [Suite] -->
