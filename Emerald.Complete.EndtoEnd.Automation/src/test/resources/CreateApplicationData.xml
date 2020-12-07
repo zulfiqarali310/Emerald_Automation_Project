@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+
+	<!-- URL Links and Data -->
+	<parameter name="CreateApplication_URL" value="https://emeralddev.cubefunder.com/applications" />
+
+	<!-- Navigated Pages title Data -->
+	<parameter name="CreateApplication_Expectedtitle" value="Emerald | Application" />
+
+	<!-- Create Application required error messages -->
+	<parameter name="Requiredfields_errorMessagess"
+		value="Please Fill The Following Fields.
+		Loan Applied must be between 5,000 and 1,000,000
+		Loan term is required
+		Source is required
+		Main Guarantor
+		Title is required
+		Forename is required
+		Surname is required
+		Date of Birth is required
+		Mobile is required
+		Email is required
+		Company
+		Company name is required
+		Registration number is required
+		Business type is required
+		Incorporation Date is required
+		Registered Address
+		At least one is required Property,Building Name or Sub Building Name
+		Post code is required" />
+		
+		
+		<!-- Create Application Page Text fields -->
+		<parameter name="CommText" value="Company" />
+		<parameter name="CommName" value="New Acres Development ltd" />
+		
+		</suite> <!-- Suite -->
+		

@@ -7,15 +7,12 @@
 	<parameter name="browser" value="chrome" />
 
 	<!-- URL Links and Data -->
-	<parameter name="URL"
-		value="https://emeralddev.cubefunder.com/" />
-	<parameter name="CreateApplication_URL"
-		value="https://emeralddev.cubefunder.com/applications" />
+	<parameter name="URL" value="https://emeralddev.cubefunder.com/" />
+	<parameter name="CreateApplication_URL" value="https://emeralddev.cubefunder.com/applications" />
 
 	<!-- Navigated Pages title Data -->
 	<parameter name="LoginExpectedtitle" value="Emerald | Login" />
-	<parameter name="CreateApplication_Expectedtitle"
-		value="Emerald | Application" />
+	<parameter name="CreateApplication_Expectedtitle" value="Emerald | Application" />
 
 	<!-- Username and password Data -->
 	<parameter name="ValidUsername" value="zulfiqar" />
@@ -26,14 +23,11 @@
 	<!-- Login Page Text and error message Data -->
 
 	<parameter name="LoginText" value="Log In" />
-	<parameter name="Usernametooltip"
-		value="User name field is required" />
-	<parameter name="Passwordtooltip"
-		value="Password field is required" />
+	<parameter name="Usernametooltip" value="User name field is required" />
+	<parameter name="Passwordtooltip" value="Password field is required" />
 
 	<!-- Create Application required error messages -->
-	<parameter name="Requiredfields_errorMessagess"
-		value="Please Fill The Following Fields.
+	<parameter name="Requiredfields_errorMessagess" value="Please Fill The Following Fields.
 		Loan Applied must be between 5,000 and 1,000,000
 		Loan term is required
 		Source is required
