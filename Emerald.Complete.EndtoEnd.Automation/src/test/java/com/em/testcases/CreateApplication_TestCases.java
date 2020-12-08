@@ -32,8 +32,10 @@ public class CreateApplication_TestCases extends BrowsersFactory {
 	@Test(priority = 14)
 	@Parameters({ "Requiredfields_errorMessagess" })
 	public void ClickOn_Save_or_CreateApplication_Button(String Requiredfields_errorMessagess) {
+
 		CreateApplicationPage = new CreateApplication_Locators(driver);
 		CreateApplicationPage.clickOnSaveApplicationButton();
+		HelperMethods.waitForPageLoaded();
 		String Get_Message = CreateApplicationPage.GetRequiredfields_errormessages();
 		System.out.println("Required Error Message withoutApplication " + Get_Message);
 		CreateApplicationPage.clickOnErrorMessageAlert();
@@ -62,6 +64,7 @@ public class CreateApplication_TestCases extends BrowsersFactory {
 	@Test(priority = 17)
 	@Parameters({ "CommName" })
 	public void Test_SearchCompany_Text_and_CrossButton(String CommName) {
+		HelperMethods.waitForPageLoaded();
 		CreateApplicationPage = new CreateApplication_Locators(driver);
 		String Get_Message = CreateApplicationPage.EnteredCompanyText();
 		Assert.assertEquals(Get_Message, "Search for " + CommName);
@@ -81,11 +84,13 @@ public class CreateApplication_TestCases extends BrowsersFactory {
 	@Test(priority = 19)
 	@Parameters({ "CommName" })
 	public void Test_CompanyText_and_Cross_Button(String CommName) {
+		HelperMethods.waitForPageLoaded();
 		CreateApplicationPage = new CreateApplication_Locators(driver);
 		String Get_Message = CreateApplicationPage.EnteredCompanyText();
 		Assert.assertEquals(Get_Message, "Search for " + CommName);
 		CreateApplicationPage.clickOnPoPCrossButton();
 		CreateApplicationPage.clickOnSearchButton();
+		CreateApplicationPage.SelectEntered_Company();
 
 	}
 

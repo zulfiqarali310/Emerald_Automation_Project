@@ -48,7 +48,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 		Assert.assertTrue(PasswordActualtext.contains("Password"));
 	}
 
-	@Test(priority = 5)
+	/*@Test(priority = 5)
 	@Parameters({ "Usernametooltip", "Passwordtooltip" })
 	public void Click_LoginButton_without_usernamePaswword(String Usernametooltip, String Passwordtooltip) {
 		loginpage = new LoginPage_Locators(driver);
@@ -120,7 +120,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 		String ToasterErrorMessage = loginpage.getToasterErrormessage();
 		System.out.println(ToasterErrorMessage);
 
-	}
+	}*/
 
 	@Test(priority = 11)
 	@Parameters({ "ValidUsername", "ValidPassword" })

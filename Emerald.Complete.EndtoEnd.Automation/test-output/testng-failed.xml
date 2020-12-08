@@ -24,23 +24,10 @@
       <class name="com.em.testcases.CreateApplication_TestCases">
         <methods>
           <include name="startBrowser"/>
-          <include name="TestCreate_ApplicationPage_are_Displayed" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="Test_SearchCompany_Text_and_CrossButton" invocation-numbers="0"/>
-          <include name="Test_CompanyText_and_Cross_Button" invocation-numbers="0"/>
-          <include name="Test_CompanyName_are_Entered" invocation-numbers="0"/>
-          <include name="CheckCompany_sectionText_areAvailble" invocation-numbers="0"/>
-          <include name="Test_to_SelectEnteredCompany" invocation-numbers="0"/>
-          <include name="ClickOn_Save_or_CreateApplication_Button" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.em.testcases.CreateApplication_TestCases -->
-      <class name="com.em.testcases.CallLog_Windows_TestCases">
-        <methods>
-          <include name="startBrowser"/>
-          <include name="afterMethod"/>
-          <include name="Switch_toCall_LogWindwo"/>
-        </methods>
-      </class> <!-- com.em.testcases.CallLog_Windows_TestCases -->
     </classes>
   </test> <!-- New.test.Project(failed) -->
 </suite> <!-- Failed suite [Suite] -->
