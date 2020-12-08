@@ -14,7 +14,8 @@ public class CreateApplication_TestCases extends BrowsersFactory {
 
 	@Test(priority = 13)
 	@Parameters({ "CreateApplication_URL", "CreateApplication_Expectedtitle" })
-	public void TestCreate_ApplicationPage_are_Displayed(String CreateApplication_URL, String CreateApplication_Expectedtitle) {
+	public void TestCreate_ApplicationPage_are_Displayed(String CreateApplication_URL,
+			String CreateApplication_Expectedtitle) {
 		driver.get(CreateApplication_URL);
 		try {
 			HelperMethods.waitForPageLoaded();
@@ -26,26 +27,26 @@ public class CreateApplication_TestCases extends BrowsersFactory {
 			e.printStackTrace();
 		}
 	}
+
 	@Test(priority = 14)
-	@Parameters({ "Requiredfields_errorMessagess"})
+	@Parameters({ "Requiredfields_errorMessagess" })
 	public void ClickOn_Save_or_CreateApplication_Button(String Requiredfields_errorMessagess) {
 		CreateApplicationPage = new CreateApplication_Locators(driver);
 		CreateApplicationPage.clickOnSaveApplicationButton();
 		String Get_Message = CreateApplicationPage.GetRequiredfields_errormessages();
-		System.out.println("Required Error Message withoutApplication " +Get_Message);
+		System.out.println("Required Error Message withoutApplication " + Get_Message);
 		CreateApplicationPage.clickOnErrorMessageAlert();
-		//Assert.assertEquals(GetAll_errorMessage, Requiredfields_errorMessagess);
-		
+		// Assert.assertEquals(GetAll_errorMessage, Requiredfields_errorMessagess);
+
 	}
+
 	@Test(priority = 15)
-	@Parameters({"CommText"})
+	@Parameters({ "CommText" })
 	public void CheckCompany_sectionText_areAvailble(String CommText) {
 		CreateApplicationPage = new CreateApplication_Locators(driver);
 		String Get_Message = CreateApplicationPage.GetCompanyText();
 		Assert.assertEquals(Get_Message, CommText);
-		
+
 	}
-	
-	
 
 }
