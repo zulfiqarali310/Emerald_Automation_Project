@@ -30,6 +30,9 @@ public class BrowsersFactory {
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("use-fake-ui-for-media-stream");
+	        options.addArguments("headless");
+	        options.addArguments("window-size=1400,800");       
+	        options.addArguments("disable-gpu");
 			System.setProperty("webdriver.chrome.driver", Chromebrowserpath);
 			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {

@@ -58,34 +58,35 @@ public class CreateApplication_TestCases extends BrowsersFactory {
 		CreateApplicationPage.clickOnSearchButton();
 
 	}
+
 	@Test(priority = 17)
 	@Parameters({ "CommName" })
 	public void Test_SearchCompany_Text_and_CrossButton(String CommName) {
 		CreateApplicationPage = new CreateApplication_Locators(driver);
-		String Get_Message =  CreateApplicationPage.EnteredCompanyText();
+		String Get_Message = CreateApplicationPage.EnteredCompanyText();
 		Assert.assertEquals(Get_Message, "Search for " + CommName);
 		System.out.println(Get_Message);
 		CreateApplicationPage.clickOnPoPCrossButton();
 		CreateApplicationPage.clickOnSearchButton();
 
 	}
+
 	@Test(priority = 18)
 	@Parameters({ "CommName" })
 	public void Test_to_SelectEnteredCompany(String CommName) {
 		CreateApplicationPage = new CreateApplication_Locators(driver);
 		CreateApplicationPage.SelectEntered_Company();
 	}
+
 	@Test(priority = 19)
 	@Parameters({ "CommName" })
 	public void Test_CompanyText_and_Cross_Button(String CommName) {
 		CreateApplicationPage = new CreateApplication_Locators(driver);
-		String Get_Message =  CreateApplicationPage.EnteredCompanyText();
+		String Get_Message = CreateApplicationPage.EnteredCompanyText();
 		Assert.assertEquals(Get_Message, "Search for " + CommName);
 		CreateApplicationPage.clickOnPoPCrossButton();
 		CreateApplicationPage.clickOnSearchButton();
-		
-	}
-	
 
+	}
 
 }
