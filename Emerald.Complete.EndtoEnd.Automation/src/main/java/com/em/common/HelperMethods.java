@@ -65,7 +65,7 @@ public class HelperMethods extends BrowsersFactory {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
-	public void waitForElementToBeVisible(WebElement element) {
+	public static void waitForElementToBeVisible(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}

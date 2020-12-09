@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="InvalidUsername" value="Abcd123456"/>
-  <parameter name="LoginText" value="Log In"/>
-  <parameter name="Requiredfields_errorMessagess" value="Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is required   Source is required   Main Guarantor   Title is required   Forename is required   Surname is required   Date of Birth is required   Mobile is required   Email is required   Company   Company name is required   Registration number is required   Business type is required   Incorporation Date is required   Registered Address   At least one is required Property,Building Name or Sub Building Name   Post code is required"/>
   <parameter name="LoginExpectedtitle" value="Emerald | Login"/>
-  <parameter name="Usernametooltip" value="User name field is required"/>
   <parameter name="Passwordtooltip" value="Password field is required"/>
   <parameter name="URL" value="https://emeralddev.cubefunder.com/"/>
-  <parameter name="CreateApplication_Expectedtitle" value="Emerald | Application"/>
-  <parameter name="CommName" value="New Acres Development ltd"/>
   <parameter name="CommText" value="Company"/>
+  <parameter name="Valid_ForeName" value="Deborah"/>
   <parameter name="browser" value="chrome"/>
+  <parameter name="Invalid_ForeName1" value="A"/>
+  <parameter name="Invalid_ForeName" value="12@"/>
+  <parameter name="tooltipforenamemsg1" value="Forename is invalid"/>
   <parameter name="ValidPassword" value="Us@12e34"/>
-  <parameter name="CreateApplication_URL" value="https://emeralddev.cubefunder.com/applications"/>
+  <parameter name="tooltipforenamemsg2" value="Only alphabets and hyphen &#039;-&#039;,&#039; are allowed"/>
+  <parameter name="Invalid_MiddleName" value="12@"/>
   <parameter name="InvalidPassword" value="123456Abcdef"/>
+  <parameter name="tooltipforenamemsg3" value="&#039;Main Guarantor. Forename&#039; must be between 2 and 50 characters. You entered 1 characters."/>
+  <parameter name="tooltipmiddlenamemsg3" value="&#039;Main Guarantor. Middle Name&#039; must be between 2 and 50 characters. You entered 1 characters."/>
+  <parameter name="InvalidUsername" value="Abcd123456"/>
+  <parameter name="LoginText" value="Log In"/>
+  <parameter name="Valid_MiddleName" value="Susan"/>
+  <parameter name="tooltipmiddlenamemsg2" value="Only alphabets, hyphen and apostrophe are allowed"/>
+  <parameter name="tooltipmiddlenamemsg1" value="Middle Name is invalid"/>
+  <parameter name="Requiredfields_errorMessagess" value="Please Fill The Following Fields.   Loan Applied must be between 5,000 and 1,000,000   Loan term is required   Source is required   Main Guarantor   Title is required   Forename is required   Surname is required   Date of Birth is required   Mobile is required   Email is required   Company   Company name is required   Registration number is required   Business type is required   Incorporation Date is required   Registered Address   At least one is required Property,Building Name or Sub Building Name   Post code is required"/>
+  <parameter name="Usernametooltip" value="User name field is required"/>
+  <parameter name="CreateApplication_Expectedtitle" value="Emerald | Application"/>
+  <parameter name="Invalid_MiddleName1" value="A"/>
+  <parameter name="CommName" value="New Acres Development ltd"/>
+  <parameter name="CreateApplication_URL" value="https://emeralddev.cubefunder.com/applications"/>
   <parameter name="ValidUsername" value="zulfiqar"/>
   <listeners>
     <listener class-name="com.em.common.TestListeners"/>
@@ -25,7 +37,7 @@
         <methods>
           <include name="startBrowser"/>
           <include name="afterMethod"/>
-          <include name="Test_SearchCompany_Text_and_CrossButton" invocation-numbers="0"/>
+          <include name="Test_CreateApplication_MainGur_Middlename_validationTooltip_Msgs_26" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.em.testcases.CreateApplication_TestCases -->
     </classes>

@@ -13,7 +13,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 1)
 	@Parameters({ "URL", "LoginExpectedtitle" })
-	public void Emerald_Lunched(String URL, String LoginExpectedtitle) {
+	public void Test_LoginPage_Emerald_Lunched_1(String URL, String LoginExpectedtitle) {
 		driver.get(URL);
 		try {
 			HelperMethods.waitForPageLoaded();
@@ -27,7 +27,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 	}
 
 	@Test(priority = 2)
-	public void Test_Login_Logo_Text_isPresent() {
+	public void Test_LoginPage_Logo_Text_isPresent_2() {
 		loginpage = new LoginPage_Locators(driver);
 		String LogoActualtext = loginpage.getloginLogoText();
 		Assert.assertTrue(LogoActualtext.contains("Login"));
@@ -35,14 +35,14 @@ public class LoginPage_TestCases extends BrowsersFactory {
 	}
 
 	@Test(priority = 3)
-	public void Test_Username_Text_isPresent() {
+	public void Test_LoginPage_Username_Text_isPresent_3() {
 		loginpage = new LoginPage_Locators(driver);
 		String UsernameActualtext = loginpage.userNametext();
 		Assert.assertTrue(UsernameActualtext.contains("Username"));
 	}
 
 	@Test(priority = 4)
-	public void Test_Password_Text_isPresent() {
+	public void Test_LoginPage_Password_Text_isPresent_4() {
 		loginpage = new LoginPage_Locators(driver);
 		String PasswordActualtext = loginpage.passwordText();
 		Assert.assertTrue(PasswordActualtext.contains("Password"));
@@ -50,7 +50,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	/*@Test(priority = 5)
 	@Parameters({ "Usernametooltip", "Passwordtooltip" })
-	public void Click_LoginButton_without_usernamePaswword(String Usernametooltip, String Passwordtooltip) {
+	public void Click_LoginPage_LoginButton_without_usernamePaswword_5(String Usernametooltip, String Passwordtooltip) {
 		loginpage = new LoginPage_Locators(driver);
 		loginpage.clickOnloginButton();
 		String Usnametooltip = loginpage.getUsernameTooltip();
@@ -62,7 +62,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 6)
 	@Parameters("LoginText")
-	public void Test_LoginButton(String LoginText) {
+	public void Test_LoginPage_LoginButton_6(String LoginText) {
 		loginpage = new LoginPage_Locators(driver);
 		String LoginButtontext = loginpage.getLoginButtonText();
 		Assert.assertEquals(LoginText, LoginButtontext);
@@ -71,7 +71,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 7)
 	@Parameters("ValidPassword")
-	public void Test_Show_Hide_PasswordButton(String ValidPassword) {
+	public void Test_LoginPage_Show_Hide_PasswordButton_7(String ValidPassword) {
 		loginpage = new LoginPage_Locators(driver);
 		loginpage.typePassword(ValidPassword);
 		loginpage.ShowHidePasswordButton();
@@ -83,7 +83,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 8)
 	@Parameters({ "ValidPassword", "Usernametooltip" })
-	public void Test_login_without_Username(String ValidPassword, String Usernametooltip) {
+	public void Test_LoginPage_login_without_Username_8(String ValidPassword, String Usernametooltip) {
 		loginpage = new LoginPage_Locators(driver);
 		driver.navigate().refresh();
 		HelperMethods.waitForPageLoaded();
@@ -96,7 +96,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 9)
 	@Parameters({ "ValidUsername", "Passwordtooltip" })
-	public void Test_login_without_Password(String ValidUsername, String Passwordtooltip) {
+	public void Test_LoginPage_login_without_Password_9(String ValidUsername, String Passwordtooltip) {
 		loginpage = new LoginPage_Locators(driver);
 		driver.navigate().refresh();
 		HelperMethods.waitForPageLoaded();
@@ -110,7 +110,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 10)
 	@Parameters({ "InvalidUsername", "InvalidPassword" })
-	public void Test_for_Invalid_login(String InvalidUsername, String InvalidPassword) {
+	public void Test_LoginPage_for_Invalid_login_10(String InvalidUsername, String InvalidPassword) {
 		loginpage = new LoginPage_Locators(driver);
 		driver.navigate().refresh();
 		HelperMethods.waitForPageLoaded();
@@ -124,7 +124,7 @@ public class LoginPage_TestCases extends BrowsersFactory {
 
 	@Test(priority = 11)
 	@Parameters({ "ValidUsername", "ValidPassword" })
-	public void valid_login(String ValidUsername, String ValidPassword) {
+	public void Test_LoginPage_valid_login_11(String ValidUsername, String ValidPassword) {
 		loginpage = new LoginPage_Locators(driver);
 		driver.navigate().refresh();
 		HelperMethods.waitForPageLoaded();

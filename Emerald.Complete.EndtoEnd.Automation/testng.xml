@@ -49,9 +49,34 @@
 		
 		
 		<!-- Create Application Page Text fields -->
+		<!-- Create Application Company Details -->
 		<parameter name="CommText" value="Company" />
 		<parameter name="CommName" value="New Acres Development ltd" />
 		
+		<!-- Create Application Page Forename fields details -->
+		<parameter name="Valid_ForeName" value="Deborah" />
+		<parameter name="Invalid_ForeName" value="12@" />
+		<parameter name="Invalid_ForeName1" value="A" />
+		<parameter name="tooltipforenamemsg1" value="Forename is invalid" />
+		<parameter name="tooltipforenamemsg2" value="Only alphabets and hyphen '-',' are allowed" />
+		<parameter name="tooltipforenamemsg3" value="'Main Guarantor. Forename' must be between 2 and 50 characters. You entered 1 characters." />
+		
+		<!-- Create Application Page Middlename fields details -->
+		<parameter name="Valid_MiddleName" value="Susan" />
+		<parameter name="Invalid_MiddleName" value="12@" />
+		<parameter name="Invalid_MiddleName1" value="A" />
+		<parameter name="tooltipmiddlenamemsg1" value="Middle Name is invalid" />
+		<parameter name="tooltipmiddlenamemsg2" value="Only alphabets, hyphen and apostrophe are allowed" />
+		<parameter name="tooltipmiddlenamemsg3" value="'Main Guarantor. Middle Name' must be between 2 and 50 characters. You entered 1 characters." />
+		
+		
+		<!-- Create Application Page Surname fields details -->
+		<parameter name="Valid_SurName" value="Nabi" />
+		<parameter name="Invalid_SurName" value="12@" />
+		<parameter name="Invalid_SurName1" value="A" />
+		<parameter name="tooltipsurnamemsg1" value="Surname is invalid" />
+		<parameter name="tooltipsurnamemsg2" value="Only alphabets and hyphen -' are allowed" />
+		<parameter name="tooltipsurnamemsg3" value="'Main Guarantor. Surname' must be between 2 and 50 characters. You entered 1 characters." />
 		
 	<listeners>
 		<listener class-name="com.em.common.TestListeners"></listener>
@@ -61,7 +86,7 @@
 			<class name="com.em.common.BrowsersFactory" />
 			<class name="com.em.testcases.LoginPage_TestCases" />
 			<class name="com.em.testcases.CallLog_Windows_TestCases" />
-			<class name="com.em.testcases.CreateApplication_TestCases" />
+			<class name="com.em.testcases.CreateApplication_MG_TestCases" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -15,7 +15,7 @@ public class CallLog_Windows_TestCases extends BrowsersFactory {
 	HelperMethods HelpMethod = new HelperMethods();
 
 	@Test(priority = 12)
-	public void Switch_toCall_LogWindwo() {
+	public void Test_CallLog_Windows_Switch_toCall_12() {
 		HelperMethods.waitForPageLoaded();
 		CallLogpage = new CallLogs_Windows_Locators(driver);
 		// Store the current window handle

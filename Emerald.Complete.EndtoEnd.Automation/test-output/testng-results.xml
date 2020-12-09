@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="19" passed="13" failed="0" skipped="0">
+<testng-results ignored="6" total="30" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-08T17:39:15 PKT" name="Suite" finished-at="2020-12-08T17:40:41 PKT" duration-ms="86192">
+  <suite started-at="2020-12-09T16:47:30 PKT" name="Suite" finished-at="2020-12-09T16:51:26 PKT" duration-ms="236287">
     <groups>
     </groups>
-    <test started-at="2020-12-08T17:39:15 PKT" name="Emerald Complete Testing Flow" finished-at="2020-12-08T17:39:15 PKT" duration-ms="7">
+    <test started-at="2020-12-09T16:47:30 PKT" name="Emerald Complete Testing Flow" finished-at="2020-12-09T16:47:30 PKT" duration-ms="9">
     </test> <!-- Emerald Complete Testing Flow -->
-    <test started-at="2020-12-08T17:39:15 PKT" name="New.test.Project" finished-at="2020-12-08T17:40:41 PKT" duration-ms="86152">
-      <class name="com.em.testcases.CallLog_Windows_TestCases">
-        <test-method signature="Switch_toCall_LogWindwo()[pri:12, instance:com.em.testcases.CallLog_Windows_TestCases@4c39bec8]" started-at="2020-12-08T17:39:45 PKT" name="Switch_toCall_LogWindwo" finished-at="2020-12-08T17:39:58 PKT" duration-ms="12209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Switch_toCall_LogWindwo -->
-      </class> <!-- com.em.testcases.CallLog_Windows_TestCases -->
-      <class name="com.em.testcases.CreateApplication_TestCases">
-        <test-method signature="TestCreate_ApplicationPage_are_Displayed(java.lang.String, java.lang.String)[pri:13, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:39:58 PKT" name="TestCreate_ApplicationPage_are_Displayed" finished-at="2020-12-08T17:40:08 PKT" duration-ms="10384" status="PASS">
+    <test started-at="2020-12-09T16:47:30 PKT" name="New.test.Project" finished-at="2020-12-09T16:51:26 PKT" duration-ms="236244">
+      <class name="com.em.testcases.CreateApplication_MG_TestCases">
+        <test-method signature="Test_CreateApplication_MG_Page_are_Displayed_13(java.lang.String, java.lang.String)[pri:13, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:13 PKT" name="Test_CreateApplication_MG_Page_are_Displayed_13" finished-at="2020-12-09T16:48:23 PKT" duration-ms="10416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,8 +24,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCreate_ApplicationPage_are_Displayed -->
-        <test-method signature="ClickOn_Save_or_CreateApplication_Button(java.lang.String)[pri:14, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:40:08 PKT" name="ClickOn_Save_or_CreateApplication_Button" finished-at="2020-12-08T17:40:18 PKT" duration-ms="10393" status="PASS">
+        </test-method> <!-- Test_CreateApplication_MG_Page_are_Displayed_13 -->
+        <test-method signature="Test_CreateApplication_MG_To_ClickOn_Save_Button_14(java.lang.String)[pri:14, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:23 PKT" name="Test_CreateApplication_MG_To_ClickOn_Save_Button_14" finished-at="2020-12-09T16:48:34 PKT" duration-ms="10323" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,8 +35,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickOn_Save_or_CreateApplication_Button -->
-        <test-method signature="CheckCompany_sectionText_areAvailble(java.lang.String)[pri:15, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:40:18 PKT" name="CheckCompany_sectionText_areAvailble" finished-at="2020-12-08T17:40:18 PKT" duration-ms="67" status="PASS">
+        </test-method> <!-- Test_CreateApplication_MG_To_ClickOn_Save_Button_14 -->
+        <test-method signature="Test_CreateApplication_MG_Company_sectionText_areAvailble_15(java.lang.String)[pri:15, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:34 PKT" name="Test_CreateApplication_MG_Company_sectionText_areAvailble_15" finished-at="2020-12-09T16:48:34 PKT" duration-ms="62" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,8 +46,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckCompany_sectionText_areAvailble -->
-        <test-method signature="Test_CompanyName_are_Entered(java.lang.String)[pri:16, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:40:18 PKT" name="Test_CompanyName_are_Entered" finished-at="2020-12-08T17:40:19 PKT" duration-ms="762" status="PASS">
+        </test-method> <!-- Test_CreateApplication_MG_Company_sectionText_areAvailble_15 -->
+        <test-method signature="Test_CreateApplication_MG_CompanyName_are_Entered_16(java.lang.String)[pri:16, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:34 PKT" name="Test_CreateApplication_MG_CompanyName_are_Entered_16" finished-at="2020-12-09T16:48:34 PKT" duration-ms="789" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,8 +57,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_CompanyName_are_Entered -->
-        <test-method signature="Test_SearchCompany_Text_and_CrossButton(java.lang.String)[pri:17, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:40:19 PKT" name="Test_SearchCompany_Text_and_CrossButton" finished-at="2020-12-08T17:40:30 PKT" duration-ms="10379" status="PASS">
+        </test-method> <!-- Test_CreateApplication_MG_CompanyName_are_Entered_16 -->
+        <test-method signature="Test_CreateApplication_MG_To_SearchCompany_Text_and_CrossButton_17(java.lang.String)[pri:17, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:34 PKT" name="Test_CreateApplication_MG_To_SearchCompany_Text_and_CrossButton_17" finished-at="2020-12-09T16:48:45 PKT" duration-ms="10274" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,8 +68,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_SearchCompany_Text_and_CrossButton -->
-        <test-method signature="Test_to_SelectEnteredCompany(java.lang.String)[pri:18, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:40:30 PKT" name="Test_to_SelectEnteredCompany" finished-at="2020-12-08T17:40:30 PKT" duration-ms="615" status="PASS">
+        </test-method> <!-- Test_CreateApplication_MG_To_SearchCompany_Text_and_CrossButton_17 -->
+        <test-method signature="Test_CreateApplication_MG_to_SelectEnteredCompany_18(java.lang.String)[pri:18, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:45 PKT" name="Test_CreateApplication_MG_to_SelectEnteredCompany_18" finished-at="2020-12-09T16:48:45 PKT" duration-ms="657" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,8 +79,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_to_SelectEnteredCompany -->
-        <test-method signature="Test_CompanyText_and_Cross_Button(java.lang.String)[pri:19, instance:com.em.testcases.CreateApplication_TestCases@f79e]" started-at="2020-12-08T17:40:30 PKT" name="Test_CompanyText_and_Cross_Button" finished-at="2020-12-08T17:40:41 PKT" duration-ms="11034" status="PASS">
+        </test-method> <!-- Test_CreateApplication_MG_to_SelectEnteredCompany_18 -->
+        <test-method signature="Test_CreateApplication_MG_CompanyText_and_Cross_Button_19(java.lang.String)[pri:19, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:45 PKT" name="Test_CreateApplication_MG_CompanyText_and_Cross_Button_19" finished-at="2020-12-09T16:48:56 PKT" duration-ms="10925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,10 +90,162 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_CompanyText_and_Cross_Button -->
-      </class> <!-- com.em.testcases.CreateApplication_TestCases -->
+        </test-method> <!-- Test_CreateApplication_MG_CompanyText_and_Cross_Button_19 -->
+        <test-method signature="Test_Createapplication_MG_to_Select_all_Directors_and_Submit_Button_20()[pri:20, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:48:56 PKT" name="Test_Createapplication_MG_to_Select_all_Directors_and_Submit_Button_20" finished-at="2020-12-09T16:49:07 PKT" duration-ms="10665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Createapplication_MG_to_Select_all_Directors_and_Submit_Button_20 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Title_areSelected_21()[pri:21, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:49:07 PKT" name="Test_CreateApplication_MG_MainGur_Title_areSelected_21" finished-at="2020-12-09T16:49:17 PKT" duration-ms="10194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Title_areSelected_21 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Forename_Icon_are_Present_22()[pri:22, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:49:17 PKT" name="Test_CreateApplication_MG_MainGur_Forename_Icon_are_Present_22" finished-at="2020-12-09T16:49:27 PKT" duration-ms="10060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Forename_Icon_are_Present_22 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Forename_validationTooltip_Msgs_23(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:23, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:49:27 PKT" name="Test_CreateApplication_MG_MainGur_Forename_validationTooltip_Msgs_23" finished-at="2020-12-09T16:49:50 PKT" duration-ms="22565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Forename is invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Only alphabets and hyphen '-',' are allowed]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA['Main Guarantor. Forename' must be between 2 and 50 characters. You entered 1 characters.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Forename_validationTooltip_Msgs_23 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Forename_are_Entered_24(java.lang.String)[pri:24, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:49:50 PKT" name="Test_CreateApplication_MG_MainGur_Forename_are_Entered_24" finished-at="2020-12-09T16:50:00 PKT" duration-ms="10403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deborah]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Forename_are_Entered_24 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Middlename_Icon_are_Present_25()[pri:25, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:50:00 PKT" name="Test_CreateApplication_MG_MainGur_Middlename_Icon_are_Present_25" finished-at="2020-12-09T16:50:10 PKT" duration-ms="10056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Middlename_Icon_are_Present_25 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Middlename_validationTooltip_Msgs_26(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:26, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:50:10 PKT" name="Test_CreateApplication_MG_MainGur_Middlename_validationTooltip_Msgs_26" finished-at="2020-12-09T16:50:33 PKT" duration-ms="22549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Middle Name is invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Only alphabets, hyphen and apostrophe are allowed]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA['Main Guarantor. Middle Name' must be between 2 and 50 characters. You entered 1 characters.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Middlename_validationTooltip_Msgs_26 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Forename_are_Entered_27(java.lang.String)[pri:27, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:50:33 PKT" name="Test_CreateApplication_MG_MainGur_Forename_are_Entered_27" finished-at="2020-12-09T16:50:43 PKT" duration-ms="10330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Susan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Forename_are_Entered_27 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Surname_Icon_are_Present_28()[pri:28, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:50:43 PKT" name="Test_CreateApplication_MG_MainGur_Surname_Icon_are_Present_28" finished-at="2020-12-09T16:50:53 PKT" duration-ms="10052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Surname_Icon_are_Present_28 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Surname_validationTooltip_Msgs_29(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:29, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:50:53 PKT" name="Test_CreateApplication_MG_MainGur_Surname_validationTooltip_Msgs_29" finished-at="2020-12-09T16:51:16 PKT" duration-ms="22359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Surname is invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Only alphabets and hyphen -' are allowed]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA['Main Guarantor. Surname' must be between 2 and 50 characters. You entered 1 characters.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Surname_validationTooltip_Msgs_29 -->
+        <test-method signature="Test_CreateApplication_MG_MainGur_Surname_are_Entered_30(java.lang.String)[pri:30, instance:com.em.testcases.CreateApplication_MG_TestCases@49e5f737]" started-at="2020-12-09T16:51:16 PKT" name="Test_CreateApplication_MG_MainGur_Surname_are_Entered_30" finished-at="2020-12-09T16:51:26 PKT" duration-ms="10291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nabi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateApplication_MG_MainGur_Surname_are_Entered_30 -->
+      </class> <!-- com.em.testcases.CreateApplication_MG_TestCases -->
+      <class name="com.em.testcases.CallLog_Windows_TestCases">
+        <test-method signature="Test_CallLog_Windows_Switch_toCall_12()[pri:12, instance:com.em.testcases.CallLog_Windows_TestCases@445b295b]" started-at="2020-12-09T16:48:01 PKT" name="Test_CallLog_Windows_Switch_toCall_12" finished-at="2020-12-09T16:48:13 PKT" duration-ms="12153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CallLog_Windows_Switch_toCall_12 -->
+      </class> <!-- com.em.testcases.CallLog_Windows_TestCases -->
       <class name="com.em.common.BrowsersFactory">
-        <test-method is-config="true" signature="startBrowser(java.lang.String)[pri:0, instance:com.em.common.BrowsersFactory@5b94b04d]" started-at="2020-12-08T17:39:15 PKT" name="startBrowser" finished-at="2020-12-08T17:39:21 PKT" duration-ms="5686" status="PASS">
+        <test-method is-config="true" signature="startBrowser(java.lang.String)[pri:0, instance:com.em.common.BrowsersFactory@2e377400]" started-at="2020-12-09T16:47:30 PKT" name="startBrowser" finished-at="2020-12-09T16:47:35 PKT" duration-ms="5679" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,13 +256,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.em.common.BrowsersFactory@5b94b04d]" started-at="2020-12-08T17:40:41 PKT" name="afterMethod" finished-at="2020-12-08T17:40:41 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.em.common.BrowsersFactory@2e377400]" started-at="2020-12-09T16:51:26 PKT" name="afterMethod" finished-at="2020-12-09T16:51:26 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.em.common.BrowsersFactory -->
       <class name="com.em.testcases.LoginPage_TestCases">
-        <test-method signature="Emerald_Lunched(java.lang.String, java.lang.String)[pri:1, instance:com.em.testcases.LoginPage_TestCases@8c3b9d]" started-at="2020-12-08T17:39:21 PKT" name="Emerald_Lunched" finished-at="2020-12-08T17:39:34 PKT" duration-ms="13490" status="PASS">
+        <test-method signature="Test_LoginPage_Emerald_Lunched_1(java.lang.String, java.lang.String)[pri:1, instance:com.em.testcases.LoginPage_TestCases@1757cd72]" started-at="2020-12-09T16:47:35 PKT" name="Test_LoginPage_Emerald_Lunched_1" finished-at="2020-12-09T16:47:50 PKT" duration-ms="14372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,20 +277,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Emerald_Lunched -->
-        <test-method signature="Test_Login_Logo_Text_isPresent()[pri:2, instance:com.em.testcases.LoginPage_TestCases@8c3b9d]" started-at="2020-12-08T17:39:34 PKT" name="Test_Login_Logo_Text_isPresent" finished-at="2020-12-08T17:39:34 PKT" duration-ms="93" status="PASS">
+        </test-method> <!-- Test_LoginPage_Emerald_Lunched_1 -->
+        <test-method signature="Test_LoginPage_Logo_Text_isPresent_2()[pri:2, instance:com.em.testcases.LoginPage_TestCases@1757cd72]" started-at="2020-12-09T16:47:50 PKT" name="Test_LoginPage_Logo_Text_isPresent_2" finished-at="2020-12-09T16:47:50 PKT" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_Login_Logo_Text_isPresent -->
-        <test-method signature="Test_Username_Text_isPresent()[pri:3, instance:com.em.testcases.LoginPage_TestCases@8c3b9d]" started-at="2020-12-08T17:39:34 PKT" name="Test_Username_Text_isPresent" finished-at="2020-12-08T17:39:34 PKT" duration-ms="55" status="PASS">
+        </test-method> <!-- Test_LoginPage_Logo_Text_isPresent_2 -->
+        <test-method signature="Test_LoginPage_Username_Text_isPresent_3()[pri:3, instance:com.em.testcases.LoginPage_TestCases@1757cd72]" started-at="2020-12-09T16:47:50 PKT" name="Test_LoginPage_Username_Text_isPresent_3" finished-at="2020-12-09T16:47:50 PKT" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_Username_Text_isPresent -->
-        <test-method signature="Test_Password_Text_isPresent()[pri:4, instance:com.em.testcases.LoginPage_TestCases@8c3b9d]" started-at="2020-12-08T17:39:34 PKT" name="Test_Password_Text_isPresent" finished-at="2020-12-08T17:39:35 PKT" duration-ms="51" status="PASS">
+        </test-method> <!-- Test_LoginPage_Username_Text_isPresent_3 -->
+        <test-method signature="Test_LoginPage_Password_Text_isPresent_4()[pri:4, instance:com.em.testcases.LoginPage_TestCases@1757cd72]" started-at="2020-12-09T16:47:50 PKT" name="Test_LoginPage_Password_Text_isPresent_4" finished-at="2020-12-09T16:47:50 PKT" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_Password_Text_isPresent -->
-        <test-method signature="valid_login(java.lang.String, java.lang.String)[pri:11, instance:com.em.testcases.LoginPage_TestCases@8c3b9d]" started-at="2020-12-08T17:39:35 PKT" name="valid_login" finished-at="2020-12-08T17:39:45 PKT" duration-ms="10843" status="PASS">
+        </test-method> <!-- Test_LoginPage_Password_Text_isPresent_4 -->
+        <test-method signature="Test_LoginPage_valid_login_11(java.lang.String, java.lang.String)[pri:11, instance:com.em.testcases.LoginPage_TestCases@1757cd72]" started-at="2020-12-09T16:47:50 PKT" name="Test_LoginPage_valid_login_11" finished-at="2020-12-09T16:48:01 PKT" duration-ms="10775" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,7 +305,7 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- valid_login -->
+        </test-method> <!-- Test_LoginPage_valid_login_11 -->
       </class> <!-- com.em.testcases.LoginPage_TestCases -->
     </test> <!-- New.test.Project -->
   </suite> <!-- Suite -->
