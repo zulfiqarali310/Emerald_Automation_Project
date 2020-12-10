@@ -73,6 +73,15 @@ public class CreateApplication_Locators {
 	WebElement Check_SurName_Icon;
 	@FindBy(how = How.ID, using = "mainGuarantorsurname")
 	WebElement Surname;
+	
+	//DOB Calendar
+	@FindBy(how = How.XPATH, using = "//i[@class='infoIconArea fa icon-datecalandar']")
+	WebElement Check_Calendar_Icon;
+	@FindBy(how = How.ID, using = "mainGuarantordob")
+	WebElement Dob;
+	@FindBy(how = How.XPATH, using = "//td[@class='day active']")
+	WebElement select_activeDate;
+	
 
 	public void clickOnSaveApplicationButton() {
 		HelperMethods.waitForElementToBeClickable(SaveApplication_Button);
@@ -245,4 +254,42 @@ public class CreateApplication_Locators {
 		return Check_SurName_Icon.getAttribute("title");
 
 	}
+	public void CheckCalendar_icon() {
+		HelperMethods.waitForElementToBeVisible(Check_Calendar_Icon);
+		boolean Icon = Check_Calendar_Icon.isDisplayed();
+		boolean expected = true;
+		Assert.assertEquals(Icon, expected);
+	}
+
+	public void clearDob() {
+		HelperMethods.presenceOfElement(Dob);
+		Dob.clear();
+	}
+	public void TypeDob(String dob) {
+		HelperMethods.waitForElementToBeVisible(Dob);
+		Dob.sendKeys(dob);
+	}
+	
+	public void SelectActiveDate() {
+		HelperMethods.waitForElementToBeVisible(Dob);
+		Dob.click();
+		HelperMethods.waitForElementToBeVisible(select_activeDate);
+		select_activeDate.isDisplayed();
+		select_activeDate.click();
+	}
+	public String getDobTooltip() {
+		HelperMethods.presenceOfElement(Check_Calendar_Icon);
+		Actions action = new Actions(driver);
+		try {
+			Thread.sleep(3000);
+			action.moveToElement(Check_Calendar_Icon).build().perform();
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return Check_Calendar_Icon.getAttribute("title");
+
+	}
+
+	
 }

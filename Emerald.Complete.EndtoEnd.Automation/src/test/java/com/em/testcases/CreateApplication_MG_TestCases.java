@@ -235,5 +235,6 @@ public class CreateApplication_MG_TestCases extends BrowsersFactory {
 		CreateApplicationPage.clearSurname();
 		CreateApplicationPage.TypeSurname(Valid_SurName);
 	}
+	
 
 }
